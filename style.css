@@ -1,6 +1,9 @@
-#navbarSupportedContent .navbar-nav {
-  margin-left: 40%;
-  border: 1px solid black;
+header menu .nav {
+  justify-content: center;
+}
+header menu .nav li {
+  margin-left: 0%;
+  margin-right: 2%;
 }
 
 /*# sourceMappingURL=style.css.map */
