@@ -320,7 +320,7 @@ h3.about-shop-title {
 }
 footer {
     width: 100%;
-    background-color: #000000;
+    background-color:red;
     font-family: 'MoscowSansRegular', Arial, Helvetica, sans-serif;
 }    
 .container-footer {
@@ -346,8 +346,8 @@ footer {
 }
 .input-text-footer, input[type="submit"] {
     border: 1px solid #fff !important;
-    background-color: #000000;
-    color: #fff;
+    background-color:blue;
+    color:yellow;
 }
 .input-text-footer {
     width: 100%;
