@@ -28,111 +28,199 @@
 </head>
 
 <body>
+	<div class="container-fluid bg-light" id="menu">
+		<ul class="nav">
+			<li><a href="../index.html">Главная</a></li>
+			<li><a href="#">Корзина</a></li>
+		</ul>
+	</div>
 	<main class="cd-main-content">
-		<div class="container-fluid bg-light" id="menu">
-			<ul class="nav">
-				<li><a href="../index.html">Главная</a></li>
-				<li><a href="#">Корзина</a></li>
+		<div class="cd-gallery">
+			<ul>
+				<li class="mix water three">
+					<a href="./blastoise.html"><img class="card-img-top" src="./images/blastoise.png" alt="Card image"></a>
+					<div class="card-body">
+						<h2 class="card-text text" align="center">
+							blastoise
+						</h2>
+						<h2 class="card-text text" align="center">
+							10 рублей
+						</h2>
+					</div>
+				</li>
+				<li class="mix water two">
+					<img class="card-img-top " src="./images/wartortle.png" alt="Card image">
+					<div class="card-body">
+						<h2 class="card-text text" align="center">
+							wartortle
+						</h2>
+						<h2 class="card-text text" align="center">
+							6 рублей
+						</h2>
+					</div>
+				</li>
+				<li class="mix water one">
+					<img class="card-img-top " src="./images/squirtle.png" alt="Card image">
+					<div class="card-body">
+						<h2 class="card-text text" align="center">
+							squirtle
+						</h2>
+						<h2 class="card-text text" align="center">
+							3 рублей
+						</h2>
+					</div>
+				</li>
+				<li class="mix fire three">
+					<img class="card-img-top " src="./images/charizard.png" alt="Card image">
+					<div class="card-body">
+						<h2 class="card-text text" align="center">
+							charizard
+						</h2>
+						<h2 class="card-text text" align="center">
+							10 рублей
+						</h2>
+					</div>
+				</li>
+				<li class="mix fire two">
+					<img class="card-img-top " src="./images/charmeleon.png" alt="Card image">
+					<div class="card-body">
+						<h2 class="card-text text" align="center">
+							charmeleon
+						</h2>
+						<h2 class="card-text text" align="center">
+							6 рублей
+						</h2>
+					</div>
+				</li>
+				<li class="mix fire one">
+					<img class="card-img-top " src="./images/charmander.png" alt="Card image">
+					<div class="card-body">
+						<h2 class="card-text text" align="center">
+							charmander
+						</h2>
+						<h2 class="card-text text" align="center">
+							3 рублей
+						</h2>
+					</div>
+				</li>
+				<li class="mix land three">
+					<img class="card-img-top " src="./images/venusaur.png" alt="Card image">
+					<div class="card-body">
+						<h2 class="card-text text" align="center">
+							venusaur
+						</h2>
+						<h2 class="card-text text" align="center">
+							10 рублей
+						</h2>
+					</div>
+				</li>
+				<li class="mix land two">
+					<img class="card-img-top " src="./images/ivysaur.png" alt="Card image">
+					<div class="card-body">
+						<h2 class="card-text text" align="center">
+							ivysaur
+						</h2>
+						<h2 class="card-text text" align="center">
+							6 рублей
+						</h2>
+					</div>
+				</li>
+
+				<li class="mix land one">
+					<img class="card-img-top " src="./images/bulbasaur.png" alt="Card image">
+					<div class="card-body">
+						<h2 class="card-text text" align="center">
+							bulbasaur
+						</h2>
+						<h2 class="card-text text" align="center">
+							3 рублей
+						</h2>
+					</div>
+				</li>
+				<li class="gap"></li>
+				<li class="gap"></li>
+				<li class="gap"></li>
 			</ul>
+			<div class="cd-fail-message">Не найдено совпадений</div>
 		</div>
-		<div class="choice">
-			<section class="cd-gallery">
-				<ul>
-					<li class="mix  check1 radio2 option3"><img src="./images/blastoise.png" alt="Image 1"></li>
-					<li class="mix  check2 radio2 option2"><img src="./images/wartortle.png" alt="Image 2"></li>
-					<li class="mix  check3 radio3 option1"><img src="./images/squirtle.png" alt="Image 3"></li>
-					<li class="mix  check3 radio2 option4"><img src="./images/charizard.png" alt="Image 4"></li>
-					<li class="mix  check1 radio3 option2"><img src="./images/charmeleon.png" alt="Image 5"></li>
-					<li class="mix  check2 radio3 option3"><img src="./images/charmander.png" alt="Image 6"></li>
-					<li class="mix  check2 radio2 option1"><img src="./images/venusaur.png" alt="Image 7"></li>
-					<li class="mix  check1 radio3 option4"><img src="./images/ivysaur.png" alt="Image 8"></li>
-					<li class="mix  check1 radio2 option3"><img src="./images/bulbasaur.png" alt="Image 9"></li>
-					<li class="gap"></li>
-					<li class="gap"></li>
-					<li class="gap"></li>
-				</ul>
-				<div class="cd-fail-message">No results found</div>
-			</section> <!-- cd-gallery -->
+		<div class="cd-filter">
+			<form>
+				<div class="cd-filter-block">
+					<h4>Стихия покемона</h4>
+					<ul class="cd-filter-content cd-filters list">
+						<li>
+							<input class="filter" data-filter=".water" type="checkbox" id="checkbox1">
+							<label class="checkbox-label" for="checkbox1">Вода</label>
+						</li>
 
-			<div class="cd-filter">
-				<form>
-					<div class="cd-filter-block">
-						<h4>Search</h4>
+						<li>
+							<input class="filter" data-filter=".fire" type="checkbox" id="checkbox2">
+							<label class="checkbox-label" for="checkbox2">Огонь</label>
+						</li>
+						<li>
+							<input class="filter" data-filter=".land" type="checkbox" id="checkbox3">
+							<label class="checkbox-label" for="checkbox3">Земля</label>
+						</li>
+					</ul>
+				</div>
+				<div class="cd-filter-block">
+					<h4>Уровень развития покемона</h4>
+					<ul class="cd-filter-content cd-filters list">
+						<li>
+							<input class="filter" data-filter=".one" type="checkbox" id="checkbox4">
+							<label class="checkbox-label" for="checkbox4">Первый</label>
+						</li>
 
-						<div class="cd-filter-content">
-							<input type="search" placeholder="Try color-1...">
-						</div> <!-- cd-filter-content -->
-					</div> <!-- cd-filter-block -->
+						<li>
+							<input class="filter" data-filter=".two" type="checkbox" id="checkbox5">
+							<label class="checkbox-label" for="checkbox5">Второй</label> </li>
 
-					<div class="cd-filter-block">
-						<h4>Check boxes</h4>
-
-						<ul class="cd-filter-content cd-filters list">
-							<li>
-								<input class="filter" data-filter=".check1" type="checkbox" id="checkbox1">
-								<label class="checkbox-label" for="checkbox1">Option 1</label>
-							</li>
-
-							<li>
-								<input class="filter" data-filter=".check2" type="checkbox" id="checkbox2">
-								<label class="checkbox-label" for="checkbox2">Option 2</label>
-							</li>
-
-							<li>
-								<input class="filter" data-filter=".check3" type="checkbox" id="checkbox3">
-								<label class="checkbox-label" for="checkbox3">Option 3</label>
-							</li>
-						</ul> <!-- cd-filter-content -->
-					</div> <!-- cd-filter-block -->
-
-					<div class="cd-filter-block">
-						<h4>Select</h4>
-
-						<div class="cd-filter-content">
-							<div class="cd-select cd-filters">
-								<select class="filter" name="selectThis" id="selectThis">
-									<option value="">Choose an option</option>
-									<option value=".option1">Option 1</option>
-									<option value=".option2">Option 2</option>
-									<option value=".option3">Option 3</option>
-									<option value=".option4">Option 4</option>
-								</select>
-							</div> <!-- cd-select -->
-						</div> <!-- cd-filter-content -->
-					</div> <!-- cd-filter-block -->
-
-					<div class="cd-filter-block">
-						<h4>Radio buttons</h4>
-
-						<ul class="cd-filter-content cd-filters list">
-							<li>
-								<input class="filter" data-filter="" type="radio" name="radioButton" id="radio1" checked>
-								<label class="radio-label" for="radio1">All</label>
-							</li>
-
-							<li>
-								<input class="filter" data-filter=".radio2" type="radio" name="radioButton" id="radio2">
-								<label class="radio-label" for="radio2">Choice 2</label>
-							</li>
-
-							<li>
-								<input class="filter" data-filter=".radio3" type="radio" name="radioButton" id="radio3">
-								<label class="radio-label" for="radio3">Choice 3</label>
-							</li>
-						</ul> <!-- cd-filter-content -->
-					</div> <!-- cd-filter-block -->
-				</form>
-
-				<a href="#0" class="cd-close">Close</a>
-			</div> <!-- cd-filter -->
-
-			<a href="#0" class="cd-filter-trigger">Filters</a>
-		</div>
-
+						<li>
+							<input class="filter" data-filter=".three" type="checkbox" id="checkbox6">
+							<label class="checkbox-label" for="checkbox6">Третий</label>
+						</li>
+					</ul>
+				</div>
+			</form>
+			<a href="#0" class="cd-close">Close</a>
+		</div> <!-- cd-filter -->
+		<a href="#0" class="cd-filter-trigger  text"><span>Фильтр товаров</span></a>
 	</main> <!-- cd-main-content -->
-	<script src="js/jquery-2.1.1.js"></script>
+
+	<!--Import jQuery-->
+	<script src="http://code.jquery.com/jquery-2.2.4.min.js"></script>
+	<!-- jQuery for older IE -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+	<!-- Site Sripts -->
 	<script src="js/jquery.mixitup.min.js"></script>
-	<script src="js/main.js"></script> <!-- Resource jQuery -->
+	<script src="js/filter.min.js"></script>
+
+		<footer>
+			<div class="container-footer">
+				<section class="footer-info">
+					<h3 class="title-footer">Будьте всегда с нами:</h3>
+					<form action="URL" class="search-form-footer" method="POST">
+						<input type="email" name="email" id="email-footer" class="input-text-footer" placeholder="Ваш e-mail адрес">
+						<input type="submit" name="join" value="Подписаться" id="btn-submit-footer">
+					</form>
+				</section>
+				<section class="footer-info">
+					<h3 class="title-footer">Наши контакты:</h3>
+					<p>
+						Республика Беларусь, г. Минск, 223051
+						<br>
+						+375-29-845-14-26
+					</p>
+				</section>
+				<div class="footer-info">
+					<h3 class="title-footer">Мы в соц сетях:</h3>
+					<a href="#"><img src="./images/vk.png" alt="vk"></a>
+				</div>
+			</div>
+			<div class="footer-site-info">
+				<p>2019 г. Быстрицкий Артём Романович</p>
+			</div>
+		</footer>
 </body>
 
 </html>

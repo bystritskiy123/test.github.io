@@ -96,6 +96,24 @@ hr {
   color: black;
 }
 
+@media (max-width: 812px) {
+  #example .text {
+    font-size: 92%;
+  }
+  #example .row .part_1 {
+    width: 35%;
+    height: 1%;
+  }
+  #example .row .part_2 {
+    width: 35%;
+    height: 1%;
+  }
+}
+@media (min-width: 768px) and (max-width: 1024px) {
+  #example .text {
+    font-size: 150%;
+  }
+}
 #footer {
   margin-top: 5%;
 }
