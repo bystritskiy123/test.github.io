@@ -1,0 +1,77 @@
+@font-face {
+  font-family: "amsterdam";
+  src: url(./font/amsterdam.otf) format("opentype");
+}
+@font-face {
+  font-family: "Open Sans";
+  src: url("./font/open-sans.ttf") format("truetype");
+}
+@font-face {
+  font-family: "AdineKirnberg";
+  src: url("./font/adine-kirnberg.ttf") format("truetype");
+}
+@font-face {
+  font-family: "SchoolBook";
+  src: url("./font/schoolbook.ttf") format("truetype");
+}
+#menu {
+  position: fixed;
+  display: inline-block;
+  z-index: 10;
+}
+#menu .nav {
+  justify-content: center;
+  font-family: "SchoolBook";
+  font-style: "regular";
+  font-size: 200%;
+}
+#menu .nav li {
+  margin-left: 1%;
+  margin-right: 1%;
+}
+#menu .nav li a {
+  text-decoration: none;
+  color: black;
+}
+
+.main {
+  margin-top: 10%;
+  display: inline-block;
+}
+.main .main-description .main-container-images .main-image {
+  width: 120%;
+  height: 28%;
+}
+.main .right-column-info .text {
+  font-family: "SchoolBook";
+  font-style: "regular";
+  font-size: 200%;
+  color: black;
+}
+
+#footer {
+  margin-top: 20%;
+}
+#footer footer .container-footer .search-form-footer #email-footer {
+  background-color: white;
+}
+#footer .footer-info img {
+  width: 10%;
+}
+
+@media (min-width: 768px) and (max-width: 1020px) {
+  .main {
+    margin-top: 25%;
+  }
+}
+@media (min-width: 1020px) and (max-width: 1366px) {
+  .main {
+    margin-top: 40%;
+  }
+
+  #footer {
+    margin-top: 40%;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */
