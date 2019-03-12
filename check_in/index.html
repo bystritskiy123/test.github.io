@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Регисрация</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/style.css">
+
+
+    <!--bootsrap-->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
+        crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+        crossorigin="anonymous"></script>
+
+    <!--bootstrap-->
+</head>
+
+<body>
+    <div class="container-fluid bg-light" id="menu">
+        <ul class="nav">
+            <li><a href="../index.html">Главная</a></li>
+        </ul>
+    </div>
+
+    <div id="check_in" class="container-fluid">
+        <form class="needs-validation mr-auto mx-auto" novalidate>
+            <div class="form-row">
+                <div class="col-md-4 mb-3">
+                    <label for="validationTooltip01">Имя</label>
+                    <input type="text" class="form-control" id="validationTooltip01" placeholder="Имя" value="Mark"
+                        required>
+                    <div class="valid-tooltip">
+                        Looks good!
+                    </div>
+                </div>
+                <div class="col-md-4 mb-3">
+                    <label for="validationTooltip02">Фамилия</label>
+                    <input type="text" class="form-control" id="validationTooltip02" placeholder="Фамилия" value="Otto"
+                        required>
+                    <div class="valid-tooltip">
+                        Looks good!
+                    </div>
+                </div>
+                <div class="col-md-4 mb-3">
+                    <label for="validationTooltipUsername">Имя пользователя</label>
+                    <div class="input-group">
+                        <div class="input-group-prepend">
+                            <span class="input-group-text" id="validationTooltipUsernamePrepend">@</span>
+                        </div>
+                        <input type="text" class="form-control" id="validationTooltipUsername" placeholder="Имя пользователя"
+                            aria-describedby="validationTooltipUsernamePrepend" required>
+                        <div class="invalid-tooltip">
+                            Please choose a unique and valid username.
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="form-row">
+                <div class="col-md-6 mb-3">
+                    <label for="validationTooltip03">City</label>
+                    <input type="text" class="form-control" id="validationTooltip03" placeholder="City" required>
+                    <div class="invalid-tooltip">
+                        Please provide a valid city.
+                    </div>
+                </div>
+                <div class="col-md-3 mb-3">
+                    <label for="validationTooltip04">State</label>
+                    <input type="text" class="form-control" id="validationTooltip04" placeholder="State" required>
+                    <div class="invalid-tooltip">
+                        Please provide a valid state.
+                    </div>
+                </div>
+                <div class="col-md-3 mb-3">
+                    <label for="validationTooltip05">Zip</label>
+                    <input type="text" class="form-control" id="validationTooltip05" placeholder="Zip" required>
+                    <div class="invalid-tooltip">
+                        Please provide a valid zip.
+                    </div>
+                </div>
+            </div>
+            <button class="btn btn-primary" type="submit">Submit form</button>
+        </form>
+    </div>
+
+    <div id="footer">
+        <footer>
+            <div class="container-footer">
+                <section class="footer-info">
+                    <h3 class="title-footer">Будьте всегда с нами:</h3>
+                    <form action="URL" class="search-form-footer" method="POST">
+                        <input type="email" name="email" id="email-footer" class="input-text-footer" placeholder="Ваш e-mail адрес">
+                        <input type="submit" name="join" value="Подписаться" id="btn-submit-footer">
+                    </form>
+                </section>
+                <section class="footer-info">
+                    <h3 class="title-footer">Наши контакты:</h3>
+                    <p>
+                        Республика Беларусь, г. Минск, 223051
+                        <br>
+                        +375-29-845-14-26
+                    </p>
+                </section>
+                <div class="footer-info">
+                    <h3 class="title-footer">Мы в соц сетях:</h3>
+                    <a href="#"><img src="./images/vk.png" alt="vk"></a>
+                </div>
+            </div>
+            <div class="footer-site-info">
+                <p>2019 г. Быстрицкий Артём Романович</p>
+            </div>
+        </footer>
+    </div>
+</body>
+
+</html>

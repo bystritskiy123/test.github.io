@@ -1,0 +1,91 @@
+$color-text:black;
+$color-fon:red;
+
+@mixin text {
+    font-family: "SchoolBook";
+    font-style: "regular";
+    font-size: 150%;
+    color: $color-text;
+}
+
+
+
+
+@font-face {
+    font-family: 'amsterdam';
+    src: url(./font/amsterdam.otf) format("opentype");
+}
+
+@font-face {
+    font-family: 'Open Sans';
+    src: url("./font/open-sans.ttf") format("truetype");
+}
+
+@font-face {
+    font-family: 'AdineKirnberg';
+    src: url("./font/adine-kirnberg.ttf") format("truetype");
+}
+
+@font-face {
+    font-family: 'SchoolBook';
+    src: url("./font/schoolbook.ttf") format("truetype");
+}
+
+
+#menu {
+    position: fixed;
+    display: inline-block;
+    z-index: 10;
+
+    .nav {
+        justify-content: center;
+        font-family: 'SchoolBook';
+        font-style: 'regular';
+        font-size: 200%;
+
+        li {
+            margin-left: 1%;
+            margin-right: 1%;
+
+            a {
+                text-decoration: none;
+                color: $color-text;
+            }
+        }
+    }
+}
+
+#check_in {
+    margin-top: 15%;
+    display: inline-block;
+    @include text;
+    font-size: 200%;
+
+    .needs-validation {
+        width: 70%;
+        height: auto;
+        border: 1px solid black;
+        padding: 1%;
+    }
+}
+
+
+#footer {
+    margin-top: 15%;
+
+    footer {
+        .container-footer {
+            .search-form-footer {
+                #email-footer {
+                    background-color: white;
+                }
+            }
+        }
+    }
+
+    .footer-info {
+        img {
+            width: 10%;
+        }
+    }
+}
