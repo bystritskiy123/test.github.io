@@ -124,4 +124,10 @@ hr {
   width: 10%;
 }
 
+@media (min-width: 1024px) and (max-width: 1370px) {
+  #footer {
+    margin-top: 7%;
+  }
+}
+
 /*# sourceMappingURL=style.css.map */

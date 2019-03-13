@@ -47,12 +47,25 @@
 
 #footer {
   margin-top: 10%;
+  width: 100%;
+  height: auto;
 }
 #footer footer .container-footer .search-form-footer #email-footer {
   background-color: white;
 }
 #footer .footer-info img {
   width: 10%;
+}
+
+@media (min-width: 768px) and (max-width: 1020px) {
+  #footer {
+    margin-top: 21%;
+  }
+}
+@media (min-width: 1024px) and (max-width: 1370px) {
+  #footer {
+    margin-top: 55%;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */
